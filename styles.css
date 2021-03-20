@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    display: grid;
+    background: hsl(204, 43%, 93%);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+/* Positioning */
+.container {
+    width: 650px;
+    height: 500px;
+    background: white;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px 1px grey;
+
+}
+
+.container-1 {
+    display: grid;
+    grid-column: 2fr;
+    grid-row: 1fr;
+    padding: 40px;
+    height: 220px;
+}
+
+.container-2 {
+    display: grid;
+    height: 280px;
+}
+
+.part-1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background: hsl(179, 62%, 43%);
+    padding: 30px;
+    border-bottom-left-radius: 10px;
+    color: white;
+}
+
+.part-2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background: hsl(180, 67%, 45%);
+    padding: 30px;
+    border-bottom-right-radius: 10px;
+    color: white;
+}
+
+/* Colors */
+h1 {
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: hsl(71, 73%, 54%);
+
+}
+
+.main-p {
+    color: hsl(218, 22%, 67%);
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 10px 0;
+}
+
+h3 {
+
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+h5 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.price {
+    display: inline-flex;
+}
+
+.price-p {
+    padding: 8px 0px 0px 12px;
+    opacity: 0.7;
+}
+
+.dollar {
+    margin: 10px 0;
+    opacity: 0.9;
+}
+
+button {
+    padding: 15px 100px;
+    margin-top: 30px;
+    border-radius: 7px;
+    border: none;
+    background: hsl(71, 73%, 54%);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    outline: palegoldenrod;
+    box-shadow: 1px 1px 8px 1px grey;
+}
+
+li {
+    list-style-type: none;
+    line-height: 1.4;
+    opacity: 0.9;
+
+}
+
+@media (max-width:800px) {
+    .container {
+        width: 90%;
+        height: 800px;
+        background: white;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        border-radius: 10px;
+        box-shadow: 1px 1px 20px 1px grey;
+        margin: 0 auto;
+
+    }
+
+    .container-1 {
+        display: grid;
+        padding: 40px;
+        height: 220px;
+        grid-row: 1fr;
+       margin-bottom: 40px;
+
+    }
+
+    .container-2 {
+        display: grid;
+       
+    }
+
+    .part-1 {
+        grid-column: 1/span 2;
+        grid-row: 1fr;
+        border-radius: 0%;
+        margin-top: 32px;
+    }
+
+    .part-2 {
+        border-radius: 0 0 10px 10px;
+        grid-row: 3/span 3;
+        grid-column: 1/span 2;
+    
+        
+    }
+
+}
